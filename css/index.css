@@ -23,7 +23,7 @@ main{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
+    padding: 20px;
 }
 
 .card{
@@ -31,22 +31,21 @@ main{
     background-color: white;
     margin: auto;
     padding: 1.25rem;
-    width: 300px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     border-radius: 0.9375rem;
 }
 
-.card__content__img{
-    margin-bottom: 1.25rem;
-}
 
-.card__content__img > img {
+img {
     width: 100%;
     object-fit: contain;
     display: block;
     margin: auto;
     border-radius: 0.625rem;
+    margin-bottom: 20px;
+
 }
 
 .card__title{
@@ -59,16 +58,4 @@ main{
     font-size: .88rem;
     color: var(--Grayish-blue);
     margin-bottom: 1.25rem;
-}
-
-
-@media (max-width:375px) {
-    main{
-        padding: 0 25px;
-    }
-
-
-    .card{
-        width: 100%;
-    }
 }
